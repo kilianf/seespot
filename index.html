@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Images</title>
+    <style>
+        /* Reset body margin and height */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #6DC065;
+        }
+
+        /* Container to center the images */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Optional styling to control image sizes */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Space between images */
+        }
+        .text {
+            width: 570px; 
+            margin-top: 70px;
+        }
+        .logo {
+            width: 300px;
+        }
+    </style>
 </head>
-
 <body>
-
+    <div class="image-container">
+        <img class="logo" src="logo.png" width="400" height="auto" alt="First Image">
+        <img class="text" src="text.png" width="800" height="auto" alt="Second Image">
+    </div>    
 </body>
 </html>
